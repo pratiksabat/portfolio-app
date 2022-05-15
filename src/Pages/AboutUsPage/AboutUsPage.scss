@@ -1,0 +1,14 @@
+.Card {
+    display: flex;
+}
+.AboutUsPage{
+    text-align: left;
+    height: 48vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.AboutUsPage h1{
+    padding-left: 2rem;
+    font-size: 2.5rem;
+}

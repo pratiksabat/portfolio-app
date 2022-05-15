@@ -1,0 +1,15 @@
+.AwardCard {
+    display: flex;
+    background: #010101 0% 0% no-repeat padding-box;
+    margin: 40px;
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative;
+    z-index: 1;
+    width: 400px;
+    justify-content: space-around;
+}
+
+.award-icon{
+    align-self: center;
+}

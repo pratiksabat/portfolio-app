@@ -1,0 +1,20 @@
+[
+    {
+        "id": 1,
+        "iconType": "HID",
+        "award": "Top Impactor",
+        "company": "HashedIn By Deloitte"  
+    },
+    {
+        "id": 2,
+        "iconType": "HID",
+        "award": "Hasher Of Month",
+        "company": "HashedIn By Deloitte"  
+    },
+    {
+        "id": 3,
+        "iconType": "BSG",
+        "award": "Rashtrapati Award",
+        "company": "Bharat Scout & Guides"  
+    }
+]

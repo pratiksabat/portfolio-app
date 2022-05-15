@@ -1,0 +1,22 @@
+[
+    {
+        "id":1,
+        "stack":"React",
+        "rating":80
+    },
+    {
+        "id":2,
+        "stack":"Node",
+        "rating":90
+    },
+    {
+        "id":3,
+        "stack":"SQL",
+        "rating":85
+    },
+    {
+        "id":4,
+        "stack":"MongoDB",
+        "rating":80
+    }
+]

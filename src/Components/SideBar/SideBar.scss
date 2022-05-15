@@ -1,0 +1,41 @@
+.SideBar {
+    width: 5%;
+    left: 0;
+    top: 0;
+    height: 100vh;
+    background-color: #0e0d13;
+    position: sticky;
+}
+
+.logo{
+    height: 8%;
+    // display: flex;
+    // flex-direction: column;
+    width: 100%;
+    // justify-content: flex-start;
+    position: relative;
+  display: inline-block;
+  overflow: hidden;
+  margin: 0;
+}
+.break{
+    height: 5%;
+}
+.nav-links{
+    height: 82%;
+    // background-color: bisque;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: flex-start;
+}
+
+.nav-icons{
+    height: 81px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-right: 1px solid hsla(0,0%,100%,.1);
+    border-top: 1px solid hsla(0,0%,100%,.1);
+    border-bottom: 1px solid hsla(0,0%,100%,.1);
+}

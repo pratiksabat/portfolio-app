@@ -1,0 +1,20 @@
+[
+    {
+        "id":1,
+        "iconType":"design",
+        "skill":"Web Design",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed doeiusmod tempor incididunt ut labore et dolore magna aliqua."
+    },
+    {
+        "id":2,
+        "iconType":"webDev",
+        "skill":"Web Development",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed doeiusmod tempor incididunt ut labore et dolore magna aliqua."
+    },
+    {
+        "id":3,
+        "iconType":"appDev",
+        "skill":"App Development",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed doeiusmod tempor incididunt ut labore et dolore magna aliqua."
+    }
+]
