@@ -9,7 +9,7 @@ const AwardCardPage = () => {
        <h1>Awards</h1>
       <div className='cardAward'>
       {
-      data.map((award)=><AwardCard data={award}/>)
+      data.map((award)=><AwardCard data={award} key={award.id}/>)
       }
       </div>
     </div>

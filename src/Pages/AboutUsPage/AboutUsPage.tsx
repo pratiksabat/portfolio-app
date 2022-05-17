@@ -8,7 +8,7 @@ const AboutUsPage = () => {
     <div className="AboutUsPage">
       <h1>What i do ?</h1>
       <div className="Card">
-    {data.map((obj)=>  <AboutCard data={obj}/>)}
+    {data.map((obj)=>  <AboutCard data={obj}  key={obj.id}/>)}
     </div>
     </div>
   )

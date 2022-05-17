@@ -12,6 +12,7 @@
     "@types/node": "^16.11.35",
     "@types/react": "^18.0.9",
     "@types/react-dom": "^18.0.4",
+    "axios": "^0.27.2",
     "react": "^18.1.0",
     "react-animated-3d-card": "^1.0.2",
     "react-dom": "^18.1.0",

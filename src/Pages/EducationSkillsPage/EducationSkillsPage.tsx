@@ -11,7 +11,7 @@ const EducationSkillsPage = () => {
         <div className="edu">
           {data.map((obj) => {
             return (
-              <div className="edu-cards">
+              <div className="edu-cards" key={obj.id}>
                 <p>{obj.year}</p>
                 <h4>{obj.programme}</h4>
                 <p>{obj.university}</p>
@@ -32,7 +32,7 @@ const EducationSkillsPage = () => {
         <div className="skill-wrapper">
           {
             skills.map((obj)=>{
-              return <div className="skill-lt">
+              return <div className="skill-lt" key={obj.id}>
               <h4>{obj.stack}</h4>
               <span className="count-inner">
                 <span>{obj.rating}</span>%
