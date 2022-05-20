@@ -5,6 +5,10 @@ const backgroundImg = require("../../assets/home-banner.png");
 
 
 const HomePage = () => {
+  const performOperation = (e)=>{
+      e.preventDefault();
+      window.location.href = 'https://drive.google.com/file/d/1Gy9fhx58STlN9fRCT4WVkQVwPbU6UQga/view?usp=sharing';
+   }
   return (
     <div className="HomePage">
       <div className="top-bar">
@@ -40,7 +44,7 @@ const HomePage = () => {
               industry experience includes working with large engineering teams to achieve concrete goals on a strict deadline.
             </p>
             <div></div>
-            <Button text="Download CV"/>
+            <Button text="Download CV" performOperation = {performOperation}/>
           </div>
         </div>
         <div

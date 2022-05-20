@@ -1,10 +1,15 @@
-// .MyWorkPage {
-//     width: 100%;
-//     height: 100vh;
-//     background-color: aqua;
-// }
+.MyWorkPage {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  height: 100vh;
+  justify-content: center;
+}
 
-@import url('https://fonts.googleapis.com/css?family=Raleway');
+.MyWorkPage h1{
+  padding-left: 2rem;
+  font-size: 2.5rem;
+}
 
 // Colors
 $dark-blue: #32325d;
@@ -20,8 +25,9 @@ $gray: #f8f8f8;
   -ms-display: flexbox;
   -webkit-display: flex;
   flex-wrap: wrap;
-  padding: 0;
+  padding: 2rem;
   margin: 0;
+  background-color: #010101;
 }
 
 // Cards
@@ -30,17 +36,18 @@ $gray: #f8f8f8;
   padding: 1rem;
   margin-bottom: 2rem;
   width: 100%;
+  height: 40%;
   @media(min-width: 40rem) {
     width: 50%;
   }
   @media(min-width: 56rem) {
-    width: 33.3%;
+    width: 25%;
   }
 
   .card-item {
     display: flex;
     flex-direction: column;
-    background-color: rgb(80, 20, 20);
+    background-color: rgb(30, 25, 25);
     width: 100%;
     border-radius: 6px;
     box-shadow: 0 20px 40px -14px rgba(0,0,0,0.25);
@@ -61,6 +68,7 @@ $gray: #f8f8f8;
   // Content
   .card-info {
     display: flex;
+    height: 60%;
     flex: 1 1 auto;
     flex-direction: column;
     padding: 1rem;
@@ -70,13 +78,13 @@ $gray: #f8f8f8;
   .card-title {
     font-size: 25px;
     line-height: 1.1em;
-    color: #32325d;
+    color: #e4e4ed;
     margin-bottom: 0.2em;
   }
 
   // Images
   .card-image{
-    height: 200px;
+    height: 40%;
     overflow: hidden;
     background-size: cover;
     background-position: center;
@@ -84,4 +92,8 @@ $gray: #f8f8f8;
     border-radius: 6px 6px 0px 0px;
     opacity: 0.91;
   }
+}
+
+.chip-styles, .btn-styles{
+  color: white;
 }

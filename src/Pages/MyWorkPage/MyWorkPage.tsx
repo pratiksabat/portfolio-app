@@ -1,16 +1,10 @@
-import { Button } from '@material-ui/core';
 import Chip from "@material-ui/core/Chip";
-import Avatar from "@material-ui/core/Avatar";
-import React, { FC, useEffect, useState } from 'react';
+import { useEffect, useState } from 'react';
 import {
-  DateRange,
-  HomeOutlined,
-  Language,
-  MenuBookOutlined,
-  PersonOutline,
-  WorkOutline
-} from "@material-ui/icons";
+  DateRangeTwoTone,
+  LanguageTwoTone} from "@material-ui/icons";
 import './MyWorkPage.scss';
+import Button from "../../Components/Button/Button";
 const axios = require('axios');
 
 const MyWorkPage = () => {
@@ -46,15 +40,19 @@ const MyWorkPage = () => {
 
   console.log(data);
   return (
-    // <div className='MyWorkPage'>
-    //   {/* {
-    //     data.map((obj)=><p>{obj}</p>)
-    //   }
-    //   <Button onClick={doSomething} placeholder="ABCDB"/> */}
-    // </div>
+    <div className='MyWorkPage'>
+      <h1>My Works</h1> 
     <div className="container">
       {
         data && data.data && data.data.map((obj) => {
+          const abc =(e) => {
+            e.preventDefault();
+            window.location.href = obj.html_url;
+          }
+          const abc1 =(e) => {
+            e.preventDefault();
+            window.location.href = obj.clone_url;
+          }
           return <div className="cards" key={obj.id}>
             <div className="card-item">
               <div className="card-image">
@@ -62,36 +60,28 @@ const MyWorkPage = () => {
               </div>
               <div className="card-info">
                 <h2 className="card-title">{obj.name}</h2>
-                <p className="card-intro">{obj.description}</p>
-                <button
-                  type="button"
-                  onClick={(e) => {
-                    e.preventDefault();
-                    window.location.href = obj.html_url;
-                  }}
-                > View Repo</button>
+                <div className="btn-styles">
+                <Button text="View" performOperation={abc}/>
+                <Button text="Clone" performOperation={abc1}/>
+                </div>
+                <div className="chip-styles">
                 <Chip
-                  avatar={<DateRange/>}
-                  label={obj.created_at}
-                // onClick={handleClick}
+                 label={new Date(obj.created_at).getDate()+'/'+new Date(obj.created_at).getMonth()+'/'+new Date(obj.created_at).getFullYear()}
+                  avatar={<DateRangeTwoTone/>}
+                  style={{backgroundColor:'#f5941c',color:'white', width:'50%', height:'80%'}}
                 />
-                <button
-                  type="button"
-                  onClick={(e) => {
-                    e.preventDefault();
-                    window.location.href = obj.clone_url;
-                  }}
-                > Clone Repo</button>
                 <Chip
-                  avatar={<Language/>}
+                  avatar={<LanguageTwoTone/>}
                   label={obj.language}
-                // onClick={handleClick}
+                  style={{backgroundColor:'#f5941c',color:'white', width:'50%', height:'80%'}}
                 />
+                </div>
               </div>
             </div>
           </div>
         })
       }
+    </div>
     </div>
   )
 }
