@@ -1,1 +1,45 @@
-.ExperiencePage {}
+.ExperiencePage {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    height: 100vh;
+    justify-content: center;
+}
+
+.ExperiencePage  h1{
+    padding-left: 2rem;
+    font-size: 2.5rem;
+}
+
+.exp-card{
+    display: flex;
+    margin: 1rem 10%;
+    height: 110px;
+    border-radius: 2rem;
+    background-color: #010101;
+    text-align: left;
+    padding: 0 5%;
+    align-content: space-around;
+    .about-work{
+        font-size: 14px;
+        width: 60%;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        }
+    .work-info{
+            width: 30%; 
+             font-size: 14px;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+        }
+    .work-info h4, .work-info p,.about-work h4, .about-work p{
+        margin: 0;
+    }
+    .work-info p,.about-work p{
+       font-size: 12px;
+    }
+
+}
+

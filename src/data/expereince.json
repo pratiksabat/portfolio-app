@@ -1,0 +1,66 @@
+[
+    {
+        "id": 1,
+        "postition": "Software  Engineer",
+        "timeline": "June 21 - Present",
+        "mode": "Remote(Presently)",
+        "type": "Full Time",
+        "company": "HashedIn By Deloitte",
+        "work": [
+            "Developed highly scalable APIs using NodeJS/ExpressJS with best practises.",
+            "Experienced with migrations, scalable architectures, and microservices for a variety of functionalities.",
+            "Writing efficient leading improved performance of application."
+        ]
+    },
+    {
+        "id": 2,
+        "postition": "Software  Engineer Intern",
+        "timeline": "Feb 21 - June 21",
+        "mode": "Remote(Presently)",
+        "type": "Intern",
+        "company": "HashedIn By Deloitte",
+        "work": [
+            "Worked on developing android applications",
+            "Worked on UI Design",
+            "Worked on Animations for App"
+        ]
+    },
+    {
+        "id": 3,
+        "postition": "Android Developer Intern",
+        "timeline": "May 20 - June 20",
+        "mode": "Remote",
+        "type": "Intern",
+        "company": "Sritham Design Studio",
+        "work": [
+            "Worked on developing android applications",
+            "Worked on UI Design",
+            "Worked on Animations for App"
+        ]
+    },
+    {
+        "id": 4,
+        "postition": "Android Developer Intern",
+        "timeline": "April 19 - May 19",
+        "mode": "Remote",
+        "type": "Intern",
+        "company": "Reubro International",
+        "work": [
+            "Worked on testing applications developed by the company",
+            "Worked on UI part of different live project under the company",
+            "Learned to integrate different API's and payment gateways with the application"
+        ]
+    },
+    {
+        "id": 5,
+        "postition": "Android Developer Intern",
+        "timeline": "Jan 19 - March 19",
+        "mode": "Remote",
+        "type": "Intern",
+        "company": "The Sparks Foundations",
+        "work": [
+            "Worked on developing a application that deals with credit transfer between users",
+            "Worked on developing a application that deals with storing personal,professional and educational data"
+        ]
+    }
+]
