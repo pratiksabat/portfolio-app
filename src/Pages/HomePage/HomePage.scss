@@ -31,6 +31,10 @@
 .phone, .email{
     width: 100%;
 }
+.phone:hover, .email:hover{
+    transform: scale(1.2);
+    color: #f5941c;
+}
 
 .info-div{
     width: 100%;

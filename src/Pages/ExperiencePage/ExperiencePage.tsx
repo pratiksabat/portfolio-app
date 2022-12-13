@@ -7,8 +7,8 @@ const ExperiencePage = () => {
     <div className='ExperiencePage'>
       <h1>Experience</h1>
       {
-        data.map((expereince) => {
-          return <div className="exp-card">
+        data.map((expereince, key) => {
+          return <div className="exp-card" key={key}>
             <div className="work-info">
                 <h4>{expereince.postition}</h4>
                 <p>{expereince.mode}</p>

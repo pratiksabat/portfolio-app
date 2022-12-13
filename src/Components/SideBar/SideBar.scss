@@ -38,4 +38,10 @@
     border-right: 1px solid hsla(0,0%,100%,.1);
     border-top: 1px solid hsla(0,0%,100%,.1);
     border-bottom: 1px solid hsla(0,0%,100%,.1);
+    cursor: pointer;
+}
+
+.nav-icons:hover{
+    color: #f5941c;
+    border: 2px solid rgba(255, 255, 255, 1);
 }

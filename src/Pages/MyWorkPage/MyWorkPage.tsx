@@ -37,8 +37,6 @@ const MyWorkPage = () => {
 
   }, [])
 
-
-  console.log(data);
   return (
     <div className='MyWorkPage'>
       <h1>My Works</h1> 
@@ -61,17 +59,17 @@ const MyWorkPage = () => {
               <div className="card-info">
                 <h2 className="card-title">{obj.name}</h2>
                 <div className="btn-styles">
-                <Button text="View" performOperation={abc}/>
+                <Button text="View" performOperation={abc} style={{ backgroundColor:'#f5941c',color:'white', width:'50%', height:'80%'}}/>
                 <Button text="Clone" performOperation={abc1}/>
                 </div>
                 <div className="chip-styles">
                 <Chip
                  label={new Date(obj.created_at).getDate()+'/'+new Date(obj.created_at).getMonth()+'/'+new Date(obj.created_at).getFullYear()}
-                  avatar={<DateRangeTwoTone/>}
+                  avatar={<DateRangeTwoTone style={{color:'white'}}/>}
                   style={{backgroundColor:'#f5941c',color:'white', width:'50%', height:'80%'}}
                 />
                 <Chip
-                  avatar={<LanguageTwoTone/>}
+                  avatar={<LanguageTwoTone style={{color:'white'}}/>}
                   label={obj.language}
                   style={{backgroundColor:'#f5941c',color:'white', width:'50%', height:'80%'}}
                 />

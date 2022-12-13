@@ -2,15 +2,25 @@ import {
   HomeOutlined,
   MenuBookOutlined,
   PersonOutline,
-  WorkOutline
+  WorkOutline,
+  PagesTwoTone
 } from "@material-ui/icons";
+import { useRef } from "react";
 import { Link } from "react-router-dom";
 import "./SideBar.scss";
 const Logo = require("../../assets/logo1.png");
 
-const SideBar = () => {
+const SideBar = ({abc}) => {
+  const ServicesRef = useRef(null);
   const performOnClick = (text: string) => {
-    return <Link to={text} />;
+    // console.log(text);
+    abc(text)
+    // window.scrollTo({
+    //   top: ServicesRef.current.offsetTop,
+    //   behavior: "smooth",
+    //   // You can also assign value "auto"
+    //   // to the behavior parameter.
+    // });
   };
   return (
     <div className="SideBar">
@@ -23,26 +33,37 @@ const SideBar = () => {
           <HomeOutlined
             onClick={() => performOnClick("Home")}
             fontSize="large"
+            titleAccess="Home"
           />
         </div>
         <div className="nav-icons">
           <PersonOutline
-            onClick={() => performOnClick("Person")}
+            onClick={() => performOnClick("About")}
             fontSize="large"
+            titleAccess="About"
           />
         </div>
         <div className="nav-icons">
           <WorkOutline
             onClick={() => {
-              performOnClick("Work");
+              performOnClick("Experience");
             }}
             fontSize="large"
+            titleAccess="Experience"
           />
         </div>
         <div className="nav-icons">
           <MenuBookOutlined
-            onClick={() => performOnClick("MenuBook")}
+            onClick={() => performOnClick("Education")}
             fontSize="large"
+            titleAccess="Education"
+          />
+        </div>
+        <div className="nav-icons">
+          <PagesTwoTone
+            onClick={() => performOnClick("Work")}
+            fontSize="large"
+            titleAccess="Work"
           />
         </div>
       </div>
