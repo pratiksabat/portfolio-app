@@ -1,31 +1,15 @@
 import React, { FC } from 'react';
 import './ExperiencePage.scss';
 import data from '../../data/expereince.json'
+import VerticalTimelineComponent from '../../Components/VerticalTimeline/VerticalTimeline';
+import { motion } from 'framer-motion';
 
 const ExperiencePage = () => {
   return (
-    <div className='ExperiencePage'>
+    <motion.div className='ExperiencePage'>
       <h1>Experience</h1>
-      {
-        data.map((expereince, key) => {
-          return <div className="exp-card" key={key}>
-            <div className="work-info">
-                <h4>{expereince.postition}</h4>
-                <p>{expereince.mode}</p>
-                <p>{expereince.timeline}</p>
-                <p>{expereince.type}</p>
-            </div>
-            <div className="about-work">
-                <h4>{expereince.company}</h4>
-                {
-                  expereince.work.map(work => <p> - {work}</p>)
-                }
-            </div>
-          </div>
-        })
-      }
-
-    </div>
+      <VerticalTimelineComponent timelineData={data}/>
+    </motion.div>
   )
 }
 
