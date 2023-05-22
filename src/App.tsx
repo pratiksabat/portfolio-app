@@ -7,6 +7,7 @@ import ExperiencePage from './Pages/ExperiencePage/ExperiencePage';
 import HomePage from './Pages/HomePage/HomePage';
 import MyWorkPage from './Pages/MyWorkPage/MyWorkPage';
 import { useRef } from 'react';
+import { motion } from 'framer-motion';
 
 function App() {
   const homeRef = useRef(null);
@@ -45,30 +46,39 @@ function App() {
     }
   }
   return (
-    <div className="App">
+    <motion.div className="App" initial={ { y: -200} } animate={{y: 0,transition: {type: 'spring'}}}>
       <SideBar abc={abc}/>
       <div className="pages">
       <section id='home' ref={homeRef}>
       <HomePage/>
       </section>
       <section id='aboutus' ref={aboutRef}>
-        <div className="aboutus-section">
+          <motion.div
+            initial={{opacity: 0}}
+            whileInView={ {
+              opacity: 1,
+              transition: { duration: 3, ease: 'easeIn' },
+            } }
+            className="aboutus-section" >
         <AboutUsPage/>
-      <AwardCardPage/>
-        </div>
+        <AwardCardPage/>
+          </motion.div>
       </section>             
       <section id='experience'  ref={expRef}>
       <ExperiencePage/>
       </section>             
-      <section id='educationSkills'  ref={eduRef}>
+        <motion.section initial={ { opacity: 0 } }
+          whileInView={ {
+            opacity: 1,
+            transition: { duration: 3, ease: 'easeIn' },
+          } } id='educationSkills'  ref={eduRef}>
       <EducationSkillsPage/>
-      </section>             
+      </motion.section>             
       <section id='work'  ref={workRef}>
       <MyWorkPage/>
       </section>             
       </div>
- 
-    </div>
+    </motion.div>
   );
 }
 
