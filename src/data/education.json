@@ -1,14 +1,30 @@
 [
-    {
-        "id":1,
-        "year":"2017-2021",
-        "programme":"BTech In Computer Science",
-        "university":"Christ (Deemed To Be University) "
-    },
-    {
-        "id":2,
-        "year":"2016-2017",
-        "programme":"Class XII",
-        "university":"Kendriya Vidyalaya INS Dronacharya"
-    }
+	{
+		"id": 1,
+		"year": "2017-2021",
+		"programme": "BTech In Computer Science",
+		"university": "Christ (Deemed To Be University) ",
+		"grade": "9.5 CGPA",
+		"subjects": [
+			"Data Structures & Algorithms",
+			"Object Oriented Analysis & Design",
+			"Data Science",
+			"Cloud Computing",
+			"Natural Language Processing"
+		]
+	},
+	{
+		"id": 2,
+		"year": "2016-2017",
+		"programme": "Class XII",
+		"university": "Kendriya Vidyalaya INS Dronacharya",
+		"grade": "74.6%",
+		"subjects": [
+			"Mathematics",
+			"Physics",
+			"Chemistry",
+			"English",
+			"Computer Science"
+		]
+	}
 ]

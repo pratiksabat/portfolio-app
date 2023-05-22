@@ -26,12 +26,13 @@
 .edu-cards{
     background: #010101 0% 0% no-repeat padding-box;
     margin: 40px;
+    padding: 20px;
     border-radius: 10px;
     overflow: hidden;
     position: relative;
     z-index: 1;
     text-align: left;
-    // width: 400px;
+    border-bottom: 3px solid white;
 }
 
 .skills-cards{

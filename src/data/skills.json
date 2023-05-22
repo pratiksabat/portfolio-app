@@ -1,22 +1,182 @@
 [
-    {
-        "id":1,
-        "stack":"React",
-        "rating":80
-    },
-    {
-        "id":2,
-        "stack":"Node",
-        "rating":90
-    },
-    {
-        "id":3,
-        "stack":"SQL",
-        "rating":85
-    },
-    {
-        "id":4,
-        "stack":"MongoDB",
-        "rating":80
-    }
+	{
+		"id": 1,
+		"stack": "androidstudio",
+		"rating": 80
+	},
+	{
+		"id": 2,
+		"stack": "angular",
+		"rating": 90
+	},
+	{
+		"id": 3,
+		"stack": "arduino",
+		"rating": 85
+	},
+	{
+		"id": 4,
+		"stack": "atom",
+		"rating": 80
+	},
+	{
+		"id": 5,
+		"stack": "aws",
+		"rating": 85
+	},
+	{
+		"id": 6,
+		"stack": "bootstrap",
+		"rating": 80
+	},
+	{
+		"id": 7,
+		"stack": "cpp",
+		"rating": 80
+	},
+	{
+		"id": 8,
+		"stack": "css",
+		"rating": 90
+	},
+	{
+		"id": 9,
+		"stack": "dart",
+		"rating": 85
+	},
+	{
+		"id": 10,
+		"stack": "docker",
+		"rating": 80
+	},
+	{
+		"id": 11,
+		"stack": "express",
+		"rating": 85
+	},
+	{
+		"id": 12,
+		"stack": "firebase",
+		"rating": 80
+	},
+	{
+		"id": 13,
+		"stack": "flask",
+		"rating": 85
+	},
+	{
+		"id": 14,
+		"stack": "flutter",
+		"rating": 80
+	},
+	{
+		"id": 15,
+		"stack": "gcp",
+		"rating": 85
+	},
+	{
+		"id": 16,
+		"stack": "git",
+		"rating": 80
+	},
+	{
+		"id": 17,
+		"stack": "github",
+		"rating": 80
+	},
+	{
+		"id": 18,
+		"stack": "html",
+		"rating": 90
+	},
+	{
+		"id": 19,
+		"stack": "java",
+		"rating": 85
+	},
+	{
+		"id": 20,
+		"stack": "js",
+		"rating": 80
+	},
+	{
+		"id": 21,
+		"stack": "jest",
+		"rating": 85
+	},
+	{
+		"id": 22,
+		"stack": "materialui",
+		"rating": 80
+	},
+	{
+		"id": 23,
+		"stack": "mongodb",
+		"rating": 85
+	},
+	{
+		"id": 24,
+		"stack": "mysql",
+		"rating": 80
+	},
+	{
+		"id": 25,
+		"stack": "nodejs",
+		"rating": 85
+	},
+	{
+		"id": 26,
+		"stack": "postgres",
+		"rating": 80
+	},
+	{
+		"id": 27,
+		"stack": "postman",
+		"rating": 80
+	},
+	{
+		"id": 28,
+		"stack": "py",
+		"rating": 90
+	},
+	{
+		"id": 29,
+		"stack": "react",
+		"rating": 85
+	},
+	{
+		"id": 30,
+		"stack": "redux",
+		"rating": 80
+	},
+	{
+		"id": 31,
+		"stack": "spring",
+		"rating": 85
+	},
+	{
+		"id": 32,
+		"stack": "sequelize",
+		"rating": 80
+	},
+	{
+		"id": 33,
+		"stack": "tailwind",
+		"rating": 85
+	},
+	{
+		"id": 34,
+		"stack": "tensorflow",
+		"rating": 80
+	},
+	{
+		"id": 35,
+		"stack": "ts",
+		"rating": 80
+	},
+	{
+		"id": 36,
+		"stack": "vscode",
+		"rating": 80
+	}
 ]
