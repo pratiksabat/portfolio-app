@@ -1,13 +1,13 @@
 import "./HomePage.scss";
 import TypeAnimation from "react-type-animation";
 import Button from "../../Components/Button/Button";
-const backgroundImg = require("../../assets/home-banner.png");
+const backgroundImg = require("../../assets/Pratik_Sabata_v2.png");
 
 
 const HomePage = () => {
   const performOperation = (e)=>{
       e.preventDefault();
-      window.location.href = 'https://drive.google.com/file/d/1Gy9fhx58STlN9fRCT4WVkQVwPbU6UQga/view?usp=sharing';
+    window.location.href = 'https://drive.google.com/file/d/16Xfx316SGz7Cs-wSx5eriBmAf2NKKijG/view?usp=sharing';
    }
   return (
     <div className="HomePage">
@@ -28,7 +28,9 @@ const HomePage = () => {
               <TypeAnimation
                 cursor={true}
                 sequence={[
-                  "Web Developer",
+                  "FrontEnd Developer",
+                  1000,
+                  "Backend Developer",
                   1000,
                   "App Developer",
                   1000,
