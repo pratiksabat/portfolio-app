@@ -1,7 +1,7 @@
-import Card from 'react-animated-3d-card'
 import './AboutCard.scss';
-import { DesktopMacOutlined , DesktopWindows, PhoneAndroid, TabletAndroidTwoTone
+import {DesktopMacOutlined , DesktopWindows, PhoneAndroid, TabletAndroidTwoTone
 } from "@material-ui/icons";
+import { FaDesktop, FaMobileAlt,FaChalkboard } from 'react-icons/fa';
 import {motion} from 'framer-motion'
 const AboutCard = (props) => {
   return (
@@ -10,7 +10,7 @@ const AboutCard = (props) => {
       transition: { duration: 1, ease: 'easeIn', }
     } } >
       <motion.div className="icon">
-        {props.data.iconType==="design"?<DesktopMacOutlined style={{fontSize:'3.5rem'}}/>:(props.data.iconType==="webDev"?<DesktopWindows style={{fontSize:'3.5rem'}}/>:<TabletAndroidTwoTone style={{fontSize:'3.5rem'}}/>)}
+        {props.data.iconType==="design"?<FaChalkboard size='3.5rem'/>:(props.data.iconType==="webDev"?<FaDesktop size='3.5rem'/>:<FaMobileAlt size='3.5rem'/>)}
       </motion.div>
       <motion.div className="feature-content">
         <h5>{props.data.skill}</h5>
